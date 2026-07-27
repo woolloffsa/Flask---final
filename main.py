@@ -16,5 +16,10 @@ def render_inventory():
   return render_template("inventory.html")
 
 
+@app.route('/outfits')
+def render_outfits():
+  return render_template("outfits.html")
+
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=81)
+  app.run(host='0.0.0.0', port=81)
